@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>자녀 상담</title>
+	<base href="{{base_url}}" />
+			<meta name="viewport" content="width=1200" />
+		<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="자녀 상담" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{curr_url}}" />
+	<!-- Facebook Open Graph end -->
+		
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/main.js?v=20181019030256" type="text/javascript"></script>
+
+	<link href="css/font-awesome/font-awesome.min.css?v=4.7.0" rel="stylesheet" type="text/css" />
+	<link href="css/site.css?v=20181019030259" rel="stylesheet" type="text/css" />
+	<link href="css/common.css?ts=1540035986" rel="stylesheet" type="text/css" />
+	<link href="css/5.css?ts=1540035986" rel="stylesheet" type="text/css" />
+	<ga-code/>
+	<script type="text/javascript">var currLang = '';</script>
+	
+	<link href="css/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" type="text/css" />	
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+	</head>
+
+
+<body><div class="root"><div class="vbox wb_container" id="wb_header">
+	
+<div class="wb_cont_inner"><div id="wb_element_instance39" class="wb_element wb_element_shape"><div class="wb_shp"></div></div><div id="wb_element_instance40" class="wb_element wb-menu"><ul class="hmenu"><li><a href="" target="_self">Home</a></li><li><a href="About/" target="_self">About</a></li><li><a href="Services/" target="_self">Services</a></li><li class="active"><a href="%EC%9E%90%EB%85%80-%EC%83%81%EB%8B%B4/" target="_self">자녀 상담</a></li><li><a href="%ED%95%99%EA%B5%90-%ED%99%9C%EB%8F%99/" target="_self">학교 활동</a></li><li><a href="%EC%A1%B8%EC%97%85%EC%83%9D/" target="_self">졸업생</a></li><li><a href="Login/" target="_self">Login</a></li></ul><div class="clearfix"></div></div><div id="wb_element_instance41" class="wb_element" style=" line-height: normal;"><h4 class="wb-stl-pagetitle" style="text-align: left;">qr코드 자동발급 시스템</h4>
+</div></div><div class="wb_cont_outer"></div><div class="wb_cont_bg"></div></div>
+<div class="vbox wb_container" id="wb_main">
+	
+<div class="wb_cont_inner"><div id="wb_element_instance43" class="wb_element" style=" line-height: normal;"><p class="wb-stl-normal">밑에 학부모분의 성함과 자녀 분의 성함을 입력해주시면 qr코드 발급을 통해 도와드리겠습니다. </p>
+</div><div id="wb_element_instance44" class="wb_element" style=" line-height: normal;"><h5 class="wb-stl-subtitle">자녀 상담</h5>
+</div><div id="wb_element_instance45" class="wb_element"><form class="wb_form" method="post" enctype="multipart/form-data"><input type="hidden" name="wb_form_id" value="99315ea5"><textarea name="message" rows="3" cols="20" class="hpc"></textarea><table><tr><th class="wb-stl-normal">Student Name&nbsp;&nbsp;</th><td><input type="hidden" name="wb_input_0" value="Student Name"><input class="form-control form-field" type="text" value="" name="wb_input_0" required="required"></td></tr><tr><th class="wb-stl-normal">Your Name&nbsp;&nbsp;</th><td><input type="hidden" name="wb_input_1" value="Your Name"><input class="form-control form-field" type="text" value="" name="wb_input_1" required="required"></td></tr><tr><th class="wb-stl-normal">Student ID&nbsp;&nbsp;</th><td><input type="hidden" name="wb_input_2" value="Student ID"><input class="form-control form-field" type="text" value="" name="wb_input_2" required="required"></td></tr><tr><th class="wb-stl-normal">Date&nbsp;&nbsp;</th><td><input type="hidden" name="wb_input_3" value="Date"><input class="form-control form-field" type="text" value="" name="wb_input_3" required="required"></td></tr><tr><th class="wb-stl-normal">Time&nbsp;&nbsp;</th><td><input type="hidden" name="wb_input_4" value="Time"><input class="form-control form-field" type="text" value="" name="wb_input_4" required="required"></td></tr><tr class="form-footer"><td colspan="2"><button type="submit" class="btn btn-default">Submit</button></td></tr></table></form><script type="text/javascript">
+			<?php $wb_form_id = popSessionOrGlobalVar("wb_form_id"); if ($wb_form_id == "99315ea5") { ?>
+				var formValues = <?php echo json_encode(popSessionOrGlobalVar("post")); ?>;
+				var formErrors = <?php echo json_encode(popSessionOrGlobalVar("formErrors")); ?>;
+				wb_form_validateForm("99315ea5", formValues, formErrors);
+				<?php $wb_form_send_success = popSessionOrGlobalVar("wb_form_send_success");
+				if (($wb_form_send_state = popSessionOrGlobalVar("wb_form_send_state"))) { ?>
+					var prompt = $("<div>")
+						.addClass("alert alert-<?php echo $wb_form_send_success ? "success" : "danger"; ?>")
+						.css({ position: "fixed", opacity: 0, right: "-50px", top: "10px", zIndex: 10000, fontSize: "24px",
+							   padding: "30px 50px", lineHeight: "24px", maxWidth: "748px" })
+						.append("<?php echo str_replace('"', '\"', $wb_form_send_state); ?>")
+						.prepend($("<button>").addClass("close")
+							.css({ marginRight: "-40px", marginTop: "-24px" })
+							.html("&nbsp;&times;")
+							.on("click", function() { $(this).parent().remove(); })
+						)
+					.appendTo("body");
+					setTimeout(function() { prompt.animate({ opacity: 1, right: "10px" }, 250); }, 250);
+					<?php $wb_form_send_success = false; $wb_form_send_state = null; ?>
+				<?php } ?>
+			<?php } ?>
+			</script></div><div id="wb_element_instance46" class="wb_element" style=" line-height: normal;"><p class="wb-stl-normal"><strong>Address:</strong></p>
+
+<p class="wb-stl-normal">고려대학교 라이시움<br>
+종암로 13<br>
+성북구<br>
+서울특별시<br>
+대한민국<br><strong>Phone:</strong></p>
+
+<p class="wb-stl-normal"><span style="direction: ltr;" dir="ltr">+82 010 1234 5678</span><br><strong>E-mail:</strong></p>
+
+<p class="wb-stl-normal"><a href="mailto:gosongi0123@gmail.com">gosongi0123@gmail.com</a></p>
+</div><div id="wb_element_instance47" class="wb_element wb-map"><div style="background: rgba(0,0,0,0.38); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"><div style="font-size: 24px; width: 100%; color: #c00; padding: 0 20%; text-align: center; display: inline-block; vertical-align: middle;">Get API Key from <a style="display: inline-block; max-width: 100%; word-break: break-all; color: #fff;" target="_blank" href="https://developers.google.com/maps/documentation/javascript/get-api-key">https://developers.google.com/maps/documentation/javascript/get-api-key</a></div><div style="vertical-align: middle; height: 100%; display: inline-block;"></div></div><script type="text/javascript">
+				(function() {
+					var resizeFunc = function() {
+						var elem = $("#wb_element_instance47");
+						var w = elem.width(), h = elem.height();
+						elem.find("div > div:first").css("zoom", Math.max(0.5, Math.min(1, ((w * h) / 120000))));
+					};
+					$(window).on("resize", resizeFunc);
+					resizeFunc();
+				})();
+			</script></div><div id="wb_element_instance48" class="wb_element"><a class="wb_button" href="https://www.qr-code-generator.com/a1/?PID=1641&amp;gclid=CjwKCAjwpKveBRAwEiwAo4PqmzIzHLe-_zm5wS7Hdu10sarxmAbNJhd800I87UkvISTkMvoElgVDnxoCSwkQAvD_BwE"><span>QRcode</span></a></div><div id="wb_element_instance49" class="wb_element" style="width: 100%;">
+			<?php
+				global $show_comments;
+				if (isset($show_comments) && $show_comments) {
+					renderComments(5);
+			?>
+			<script type="text/javascript">
+				$(function() {
+					var block = $("#wb_element_instance49");
+					var comments = block.children(".wb_comments").eq(0);
+					var contentBlock = $("#wb_main");
+					contentBlock.height(contentBlock.height() + comments.height());
+				});
+			</script>
+			<?php
+				} else {
+			?>
+			<script type="text/javascript">
+				$(function() {
+					$("#wb_element_instance49").hide();
+				});
+			</script>
+			<?php
+				}
+			?>
+			</div></div><div class="wb_cont_outer"></div><div class="wb_cont_bg"></div></div>
+<div class="vbox wb_container" id="wb_footer">
+	
+<div class="wb_cont_inner" style="height: 134px;"><div id="wb_element_instance42" class="wb_element" style=" line-height: normal;"><p class="wb-stl-footer">© 2018 <a href="http://giveyou-qrcode.000webhostapp.com">giveyou-qrcode.000webhostapp.com</a></p></div><div id="wb_element_instance50" class="wb_element" style="text-align: center; width: 100%;"><div class="wb_footer"></div><script type="text/javascript">
+			$(function() {
+				var footer = $(".wb_footer");
+				var html = (footer.html() + "").replace(/^\s+|\s+$/g, "");
+				if (!html) {
+					footer.parent().remove();
+					footer = $("#wb_footer, #wb_footer .wb_cont_inner");
+					footer.css({height: ""});
+				}
+			});
+			</script></div></div><div class="wb_cont_outer"></div><div class="wb_cont_bg"></div></div><div class="wb_sbg"></div></div>{{hr_out}}</body>
+</html>
